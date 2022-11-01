@@ -7,6 +7,4 @@ Download the .exe file and execute in cmd using "start filename"
 First self made project and this is only the foundation. 
 
 Made by
-Kartik Gokhale
-Aryan Kshatriya
-Harsh Ahire
+Kartik Gokhale, Aryan Kshatriya, Harsh Ahire
