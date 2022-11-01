@@ -91,7 +91,7 @@ import java.lang.*;
             String userChoice;
             String winner;
 
-            System.out.println("Enter 1 for a Coin-flip and 2 for playing Rock-Paper-Scissors\n");
+            System.out.println("Enter 1 to flip a coin. Enter 2 for playing Rock-Paper-Scissors.\n");
             int ch = sc.nextInt();
 
             switch(ch)
