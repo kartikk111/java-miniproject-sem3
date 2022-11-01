@@ -3,9 +3,8 @@
 import java.util.*;
 import java.lang.*;
 
-
-
-    public class MiniGame {
+    public class MiniGame 
+    {
         public static String generateComputerChoice(Random random) {
 
             int wordNumber = (random.nextInt(3) + 1);
@@ -74,7 +73,7 @@ import java.lang.*;
             }
 
             //Winner Logic for the game ends
-            finalMessage = winner + " won ( " + customMessage + " )";
+            finalMessage = winner + " won ( " +customMessage+ ")";
 
             return finalMessage;
 
@@ -89,7 +88,7 @@ import java.lang.*;
             String userChoice;
             String winner;
 
-            System.out.println("Enter 1 for coinflip and 2 for Rock-Paper-Scissors\n");
+            System.out.println("Enter 1 for a Coin-flip and 2 for playing Rock-Paper-Scissors\n");
             int ch = sc.nextInt();
 
             switch(ch)
@@ -103,7 +102,7 @@ import java.lang.*;
                         userChoice = obtainUserChoice(sc);
                         winner = chooseWinner(computerChoice, userChoice );
 
-                        System.out.println( "\nYou choose : " + userChoice + "\nComputer choose : " +computerChoice );
+                        System.out.println("\nYou chose : "+userChoice+ "\nComputer chose : "+computerChoice);
                         System.out.println(winner);
                         break;
 
