@@ -5,7 +5,8 @@ import java.lang.*;
 
     public class MiniGame 
     {
-        public static String generateComputerChoice(Random random) {
+        public static String generateComputerChoice(Random random) 
+        {
 
             int wordNumber = (random.nextInt(3) + 1);
             String computerChoice;
@@ -13,9 +14,11 @@ import java.lang.*;
 
             if (wordNumber == 1) {
                 computerChoice = "rock";
-            } else if (wordNumber == 2) {
+            } else if (wordNumber == 2) 
+            {
                 computerChoice = "paper";
-            } else
+            } 
+            else
             {
                 computerChoice = "scissors";
             }
@@ -28,7 +31,7 @@ import java.lang.*;
 
         static String obtainUserChoice(Scanner sc) {
             String userWordChoice;
-            System.out.println("Options to choose from:\n1.Rock\n2.Paper\n3.Scissors\n");
+            System.out.println("Options to choose from:\n1.Rock\n2.Paper\n3.Scissors");
             userWordChoice = sc.nextLine();
 
             return userWordChoice;
@@ -39,7 +42,7 @@ import java.lang.*;
         static String chooseWinner(String computerChoice, String userChoice) {
 
             String winner = "No Winner";
-            String customMessage = "Both choose same";
+            String customMessage = "both chose same";
             String finalMessage;
 
             String rockMessage = "The rock destroys the scissor";
@@ -73,7 +76,7 @@ import java.lang.*;
             }
 
             //Winner Logic for the game ends
-            finalMessage = winner + " won ( " +customMessage+ ")";
+            finalMessage = winner + " won ( "+customMessage+")";
 
             return finalMessage;
 
